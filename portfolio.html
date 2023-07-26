@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            My Projects
+        </title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "banner">
+            <div class = "navbar">
+                <ul>
+                    <li><a href = "./index.html"> Home </a> </li>
+                    <li><a href = "./about_me.html"> About </a> </li>
+                    <li><a href = "./work.html"> Work Experience </a> </li>
+                    <li><a href = "#"> Portfolio </a> </li>
+                    <li><a href = "./undergrad.html"> Undergrad </a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects">
+            <h1> My Projects </h1>
+            <p> These are some of my favorite projects that I have worked on (currently or in the past). </p>
+            
+            <div class="project"> 
+                <a target="_blank" href="https://github.com/raunak-sood2003/Numpy-Deep-Learning-Library"><h2> NumPy Deep Learning Library </h2> </a>
+                <img src="images/npdl_logo.png" width = "350" height="250">
+                <p> NumPy Deep Learning Library (NPDL) is a deep learning framework that I wrote purely using Python 
+                    and NumPy. I made this library as an exercise in deep learning theory as well as practice with Python and NumPy. </p>
+                <p> I wanted to make a framework that was simple to use and understand like Keras while also having the flexibility of 
+                    writing training loops, custom loss functions, etc. that PyTorch offers. NPDL is also fast for a Python based framework 
+                    since I implemented optimizations like vectorization for linear layers and Im2Col for convolutional layers, which speeds 
+                    up training times significantly. </p>
+                <p> NPDL is still in the works as there are still many more functionalities that I plan on adding. Some of which are adding recurrent 
+                    layers, dataset tools and even more loss and optimizer functions. </p>
+            </div>
+            
+            <div class="project"> 
+                <a target="_blank" href="https://github.com/raunak-sood2003/Automated-Lung-Segmentation"> <h2> Automated Lung Segmentation </h2> </a>
+                <img src="images/unet.png" width = "350" height="250">
+                <p> Lung segmentation involves identifying regions of interest (mainly the lung parenchyma) of a scan. This can often be a tedious and 
+                    expensive approach as modern day data sets can contain hundreds of thousands of scans. </p>
+                <p> Accordingly, I built and compared several different algorithms using deep learning methods to autonomously segment important regions 
+                    of lung CT scans. While the UNET architecture that I modified to work with DICOM images seemed to work really well (over 99% accuracy 
+                    with ground truth masks), I am still investigating novel methods for segmentation including generative adversarial networks (GANs).
+                </p>
+            </div>
+
+            <div class="project"> 
+                <a target="_blank" href="https://github.com/raunak-sood2003/COVID-19-Classification"> <h2> COVID-19 Classification with Transfer Learning </h2> </a>
+                <img src="images/covid.png" width = "350" height="250">
+
+                <p> A big issue in the radiology community with COVID-19 was identifying COVID positive vs negative scans. While there are some iconic characteristics 
+                    of COVID-19 CT scans such as ground-glass opacities, other diseases such as pneumonia also display similar visuals.  </p>
+                <p> Therefore, I explored the use of deep learning classifiers for this task. However, the difficulty with this task was the lack of data: I only had 
+                    access to around 700 CT scans. Accordingly, I used transfer learning with state of the art models such as VGG and ResNet. I used the convolutional 
+                    layers from these models and fine tuned them with trainable linear layers. Overall, I was able to train my adapted models to over 90% accuracy with minimal 
+                    false negative errors.  </p>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
