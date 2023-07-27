@@ -14,7 +14,7 @@ body{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url(images/background.jpg);
-    background-size : cover;
+    background-size : auto;
     background-position: center;
 }
 
@@ -54,7 +54,8 @@ body{
     width: 100%;
     position : absolute;
     top : 40%;
-    transform : translateX(20%) translateY(-20%);
+    /*transform : translateX(20%) translateY(-20%);*/
+    padding-left: 20%;
     text-align:lefts;
     color : #fff;
 }
@@ -67,6 +68,10 @@ body{
     font-weight : 100;
     line-height : 25px;
 }
+.socials{
+    padding-left: 25%;
+    padding-top: 1%;
+}
 .social{
     color : #fff;
     transition: color 0.2s;
@@ -78,7 +83,6 @@ body{
 }
 ion-icon {
     font-size: 32px;
-    transform: translateX(2500%) translateY(1400%);
   }
 mark.blue{
     color:#009688;
@@ -92,56 +96,35 @@ mark.red{
 /* about section */
 
 #about{
-    padding: 100px 0;
+    padding: 120px 100px;
 }
 
-.about-col1 img{
-    width: 600px;
-    transform: translateX(30%);
+.about-col img{
+    width: 400px;
+    float: left;
     border: 1px solid #fff;
     border-radius: 50%;
+    margin-right: 3%;
+
 }
 
-.about-col2{
+.about-col{
     color : #fff;
     font-size : 3.5em;
-    width: 800px;
+    width: 1250px;
+    padding-left: 13%;
+    padding-top: 3%;
 }
 
-.about-col2 h1{
+.about-col h1{
     font-size : 1.0em;
-    transform: translateX(110%) translateY(-800%);
+    padding-bottom: 1%;
 }
 
-.about-col2 p {
+.about-col p {
     font-size : 0.4em;
     word-break: keep-all;
-    transform: translateX(110%) translateY(-240%);
-}
-
-.resume{
-    transform: translateX(620%) translateY(-1340%);
-    width: 180px;
-}
-
-.resume a{
-    text-decoration: none;
-    color : #fff;
-    font-size: 30px;
-    
-}
-.resume a::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left : 0;
-    bottom : -10px;
-    transition : 0.5s;
-}
-.resume a:hover::after{
-    width : 100%
+    padding: 1%;
 }
 
 /* Portfolio */
